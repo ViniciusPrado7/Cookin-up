@@ -2,7 +2,7 @@
 import { obterCategorias } from '@/http/index';
 import type ICategoria from '@/interfaces/ICategoria';
 import CardCategoria from './CardCategoria.vue';
-import BotaoPrincipal from './BotaoPrincipal,.vue';
+import BotaoPrincipal from './BotaoPrincipal.vue';
 
 export default {
   data() {
@@ -14,7 +14,7 @@ export default {
     this.categorias = await obterCategorias();
   },
   components: { CardCategoria, BotaoPrincipal },
-  emits: ['adicionarIngrediente']
+  emits: ['adicionarIngrediente', 'removerIngrediente']
 }
 </script>
 

@@ -8,7 +8,7 @@ import IngredienteSelecionavel from './IngredienteSelecionavel.vue';
             categoria: {type: Object as PropType<ICategoria>, required: true}
         },
         components: { IngredienteSelecionavel},
-        emits: ['adicionarIngrediente']
+        emits: ['adicionarIngrediente', 'removerIngrediente']
     }
 </script>
 
